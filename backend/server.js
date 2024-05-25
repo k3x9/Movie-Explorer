@@ -13,12 +13,12 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-app.listen(PORT, ()=>{
-    console.log(`Server is running on port ${PORT}`);
-});
-
 app.use(express.json());
 app.use("/api/movies", MoviesRoutes);
 app.get('/', (req, res) => {
     res.send('API is running');
+});
+
+app.listen(PORT, ()=>{
+    console.log(`Server is running on port ${PORT}`);
 });
