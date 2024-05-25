@@ -53,6 +53,7 @@ const genreId = {
 const getMoviesByGenre = asyncHandler(async (req, res) => {
     const genre_names = req.query.genres.toLowerCase();
     const genre_ids = genre_names.split(',').map(genre => genreId[genre]).join(',');
+
     const url = `https://api.themoviedb.org/3/discover/movie?with_genres=${genre_ids}`;
     const options = {
         method: 'GET',

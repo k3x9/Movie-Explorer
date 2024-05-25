@@ -1,0 +1,18 @@
+.genre-card {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #555;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.genre-card:hover {
+    background-color: #777;
+}
+
+.genre-card.selected {
+    background-color: #ff0707;
+    color: #fff;
+}
