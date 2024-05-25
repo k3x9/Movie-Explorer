@@ -19,3 +19,6 @@ app.listen(PORT, ()=>{
 
 app.use(express.json());
 app.use("/api/movies", MoviesRoutes);
+app.get('/', (req, res) => {
+    res.send('API is running');
+});
