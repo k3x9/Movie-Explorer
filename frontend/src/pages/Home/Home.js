@@ -7,7 +7,7 @@ function Home() {
 
     useEffect(() => {
         const fetchMovies = async () => {
-            const response = await fetch('http://localhost:5001/api/movies/');
+            const response = await fetch('https://movie-explorer-backend-eta.vercel.app/api/movies/');
             const data = await response.json();
             setMovies(data);
         };

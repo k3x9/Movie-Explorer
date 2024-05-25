@@ -21,7 +21,7 @@ function Header() {
     };
 
     const handleTitleSearch = async () => {
-        let url = 'http://localhost:5001/api/movies/title';
+        let url = 'https://movie-explorer-backend-eta.vercel.app/api/movies/title';
 
         if (searchTerm) {
             url += `?title=${searchTerm}`;
@@ -36,7 +36,7 @@ function Header() {
     };
 
     const handleGenreSearch = async () => {
-        let url = 'http://localhost:5001/api/movies/genres';
+        let url = 'https://movie-explorer-backend-eta.vercel.app/api/movies/genres';
 
         if (genres.length > 0) {
             url += `?genres=${selectedGenres.join(',').toLowerCase()}`;
