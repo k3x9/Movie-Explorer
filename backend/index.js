@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
     credentials: true,
-    origin: ['*']
+    origin: ['https://movie-explorer-rho-lac.vercel.app/']
 };
 
 app.use(cors(corsOptions));
