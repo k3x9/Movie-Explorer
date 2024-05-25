@@ -86,7 +86,7 @@ const getMoviesByTitle = asyncHandler(async (req, res) => {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYjNkOTY5NzAxMTdjNDdmOGMwMjAyY2M4YTU3YzYyOSIsInN1YiI6IjY2NTBjYzAzZDA0ZjE2ZDlhYzM1MTE4OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.l9pivR9Ed0wDVHceebGvJas63i-BX2l89_NO-Rbj_Q8'
+            Authorization: `Bearer ${process.env.TOKEN}`
         }
     };
 
@@ -112,7 +112,7 @@ const getTrendingMovies = asyncHandler(async (req, res) => {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYjNkOTY5NzAxMTdjNDdmOGMwMjAyY2M4YTU3YzYyOSIsInN1YiI6IjY2NTBjYzAzZDA0ZjE2ZDlhYzM1MTE4OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.l9pivR9Ed0wDVHceebGvJas63i-BX2l89_NO-Rbj_Q8'
+            Authorization: `Bearer ${process.env.TOKEN}`
         }
     };
 
@@ -139,7 +139,7 @@ const getMovieByID = asyncHandler(async (req, res) => {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwYjNkOTY5NzAxMTdjNDdmOGMwMjAyY2M4YTU3YzYyOSIsInN1YiI6IjY2NTBjYzAzZDA0ZjE2ZDlhYzM1MTE4OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.l9pivR9Ed0wDVHceebGvJas63i-BX2l89_NO-Rbj_Q8'
+            Authorization: `Bearer ${process.env.TOKEN}`
         }
     };
 
